@@ -4,8 +4,8 @@
 class AwsProfileSwitcher < Formula
   desc ""
   homepage ""
-  url "https://github.com/ryu022304/aws-profile-switcher/releases/tag/0.0.2"
-  sha256 "3a62c9aa6b36b848270e6b56c933ed9f6d69bdcb0eca902c4b52936f1bb60409"
+  url "https://github.com/ryu022304/aws-profile-switcher/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "d114b0fc3aea1d14e2b321e923dc853fd2ad55a5dc0b2f544dd286878934a564"
   license "Apache-2.0"
 
   # depends_on "cmake" => :build
