@@ -5,29 +5,29 @@
 class AwsProfileSwitcher < Formula
   desc "You can easily switch AWS CLI profile settings."
   homepage "https://github.com/ryu022304/aws-profile-switcher"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.8/aws-profile-switcher_0.0.8_darwin_x86_64.tar.gz"
-      sha256 "a6b7a2741558d73280f8b08e0afe9c08aac184de359e84ee388f115f11ca2ff8"
+      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.9/aws-profile-switcher_0.0.9_darwin_x86_64.tar.gz"
+      sha256 "9fbbe816a6f349e94d00a60b7adfe4a792bccacc8fb7ec4aa1c8f3620e98b192"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.8/aws-profile-switcher_0.0.8_darwin_arm64.tar.gz"
-      sha256 "8c6ea0ebe49dfcb3062bf588fe72d94abcc52ff8ee294b261576a6a07d00b782"
+      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.9/aws-profile-switcher_0.0.9_darwin_arm64.tar.gz"
+      sha256 "d9892db394020d5c5a9b0ac19b5618e5c4bacaccccadf9f09675d271994a3f3d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.8/aws-profile-switcher_0.0.8_linux_x86_64.tar.gz"
-      sha256 "306816a0db895abb5b02b6064bcecc555f5465df25279be9b8041f18efdefca0"
+      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.9/aws-profile-switcher_0.0.9_linux_x86_64.tar.gz"
+      sha256 "1b80a3d998aad268737f78dad50fb2b2d4ccf55404b2e2ab9f2d188ea26a8c78"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.8/aws-profile-switcher_0.0.8_linux_arm64.tar.gz"
-      sha256 "a8760f062f83b0237c37a60847a0033fdaf87a99af053370ebab0b8d66dc2819"
+      url "https://github.com/ryu022304/aws-profile-switcher/releases/download/v0.0.9/aws-profile-switcher_0.0.9_linux_arm64.tar.gz"
+      sha256 "5ea5ba64be552a6829cf079ebc980200c4b0f672df7edf3297058c9f408d7e36"
     end
   end
 
