@@ -12,7 +12,7 @@ class AwsProfileSwitcher < Formula
 
   def install
     bin.install "aws-ps"
-    bin.install Dir["bin/*"]
+    bin.install Dir["bin"]
   end
 
   test do
