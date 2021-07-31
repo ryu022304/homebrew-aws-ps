@@ -4,14 +4,15 @@
 class AwsProfileSwitcher < Formula
   desc ""
   homepage ""
-  url "https://github.com/ryu022304/aws-profile-switcher/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "6041827008f708ca2713f2fc3f4cd9f347527c1ef5ed7028756179d7ffce9d09"
+  url "https://github.com/ryu022304/aws-profile-switcher/releases/tag/0.0.2"
+  sha256 "3a62c9aa6b36b848270e6b56c933ed9f6d69bdcb0eca902c4b52936f1bb60409"
   license "Apache-2.0"
 
   # depends_on "cmake" => :build
 
   def install
-    bin.install "run.sh"
+    bin.install "aws-ps"
+    bin.install Dir["bin/*"]
   end
 
   test do
