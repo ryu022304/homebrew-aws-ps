@@ -2,11 +2,13 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class AwsProfileSwitcher < Formula
-  desc "You can easily switch AWS CLI profile settings."
-  homepage "https://github.com/ryu022304/aws-profile-switcher"
-  license ""
-  head "https://github.com/ryu022304/aws-profile-switcher.git"
+  desc ""
+  homepage ""
+  url "https://github.com/ryu022304/aws-profile-switcher/archive/refs/tags/0.0.1.tar.gz"
   sha256 "6041827008f708ca2713f2fc3f4cd9f347527c1ef5ed7028756179d7ffce9d09"
+  license "Apache-2.0"
+
+  # depends_on "cmake" => :build
 
   def install
     bin.install "run.sh"
